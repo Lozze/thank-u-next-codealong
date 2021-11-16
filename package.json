@@ -1,0 +1,13 @@
+{
+  "name": "thank-u-next-codealong",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "cp -R packages/legacy dist/legacy && yarn workspace modern build"
+  },
+  "license": "MIT"
+}
